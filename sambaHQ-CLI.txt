@@ -1,0 +1,8 @@
+Dlya vvoda kompyutera v domen v Centre upravleniya sistemoy neobhodimo vybrat punkt Polzovateli → Autentifikaciya.
+V okne modulya Autentifikaciya vybrat punkt Domen Active Directory, zapolnit polya (Domen, Rabochaya gruppa, Imya kompyutera)
+vybrat punkt SSSD (v edinstvennom domene) i nazhat knopku Primenit
+
+apt-get update
+apt-get install admc
+
+zapysk admc, sozdanie group hq and users v etoy group

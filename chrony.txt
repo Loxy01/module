@@ -1,0 +1,12 @@
+#ISP chrony server#
+apt-get install chrony
+vim /etc/chrony.conf:
+hwtimestamp, allow 0/0, local stratum 5
+systemctl enable --now chronyd
+systemctl status chronyd
+
+clients:
+server 172.16.4.1 iburst (172.16.4.1 - address ISP)
+systemctl restart chronyd
+systemctl status chronyd
+chronyc sources
